@@ -1,0 +1,146 @@
+/* Global styles */
+* {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("background_1.jpg");
+}
+
+.start-screen {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: #0a0a23;
+    border-radius: 10px;
+}
+
+.start-screen h1 {
+    font-size: 48px;
+    /* Increase font size */
+    margin-top: 0;
+    color: #fecc4c;
+    /* Yellow text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add text shadow for retro effect */
+}
+
+.start-screen button {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #fecc4c;
+    color: #0a0a23;
+    border: 2px solid #fecc4c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-screen button:hover {
+    background-color: #ffac33;
+    /* Darker yellow on hover */
+    border-color: #ffac33;
+    /* Darker yellow border on hover */
+    transform: translateY(-2px);
+    /* Move button up slightly on hover */
+}
+
+
+#game {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #000;
+    border: 6px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    position: relative;
+    background-image: url("background.jpg");
+}
+
+
+#text {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.6;
+    color: #000000;
+    font-weight: bolder;
+}
+
+#controls,
+#stats {
+    background-color: #222;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#controls button,
+#stats span {
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #e20000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#controls button:hover,
+#stats span:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#monsterStats {
+    background-color: #c70d0d;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+#monsterStats .stat {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    margin: 0 5px;
+}
+
+/* Fancy button styles */
+button {
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    box-shadow: 0 3px 0 #e09414;
+    text-shadow: 0 1px 0 #c25e00;
+}
+
+button:hover {
+    background-image: linear-gradient(#ffac33, #fecc4c);
+    box-shadow: 0 2px 0 #e09414;
+    transform: translateY(1px);
+}
